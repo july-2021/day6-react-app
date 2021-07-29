@@ -14,7 +14,7 @@ export default function App() {
 }
 
 function MyCompoenent() {
-  let [list, setList] = useState(["delhi"]);
+  let [list, setList] = useState([]);
 
   // 1.
   let [thought, setThought] = useState("");
@@ -24,7 +24,7 @@ function MyCompoenent() {
     const newlist = [thought, ...list];
     setList(newlist);
 
-    // clear the input
+    // clear the input:thougth
     setThought("");
   };
 
