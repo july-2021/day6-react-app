@@ -3,16 +3,20 @@ import "./App.css";
 import { useState } from "react";
 
 function App() {
-  let [counter, setCounter] = useState(100);
-  let [name, setName] = useState("rahul");
-  let [active, setActive] = useState(true);
-  let [list, setList] = useState(["delhi", "mumbai"]);
+  let [counter, setCounter] = useState(0);
+
+  let updateCounter = () => {
+    let newvalue = counter + 100;
+    setCounter(newvalue);
+  };
 
   return (
     <div>
       <h1>Stateful Continue</h1>
-      <h1>Counter :: {counter}</h1>
-      <h1>LIst :: {list}</h1>
+      <h1>
+        Counter :: 👍 {counter}
+        <input type="button" value="Increment" onClick={updateCounter} />
+      </h1>
     </div>
   );
 }
