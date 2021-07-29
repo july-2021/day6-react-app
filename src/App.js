@@ -2,16 +2,19 @@ import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
-  // Statelesss Variable
-  let title = "Learning React";
+  // STATELESS MEMBER
   let counter = 100;
-  let list = [];
+
+  let increment = () => {
+    counter += 1;
+    console.log(counter);
+  };
 
   return (
     <div>
-      <h1 className="bg-dark text-light p-3">{title}</h1>
-
-      <h1>Counter {counter}</h1>
+      <h1>Stateless Does not Update UI</h1>
+      {counter}
+      <input type="button" value="Increment" onClick={increment} />
     </div>
   );
 }
