@@ -19,7 +19,7 @@ export default function App() {
 // <HelloWorld />
 function HelloWorld() {
   return (
-    <div className="bg-primary text-light p-3 my-1">
+    <div className="bg-primary text-light p-3 ">
       <h1>Hello World</h1>
       <hr />
       <p>
